@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+import { ModeToggle } from "@/components/ui/MoodToggle/MoodToggle";
 import Image from "next/image";
 
 export default function Home() {
@@ -95,6 +97,8 @@ export default function Home() {
           />
           Go to nextjs.org →
         </a>
+        <ModeToggle></ModeToggle>
+        <Button>shadcn</Button>
       </footer>
     </div>
   );
