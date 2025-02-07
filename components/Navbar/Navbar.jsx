@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <>
       <div>
-        <BackgroundBeams className="-z-50"></BackgroundBeams>
+        <BackgroundBeams className="-z-50 h-[80%]"></BackgroundBeams>
       </div>
       <nav className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
         {/* Logo */}

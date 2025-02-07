@@ -7,7 +7,14 @@ import { ShinyButton } from "../magicui/shiny-button";
 import { FlipWords } from "../ui/flip-words";
 
 const Header = () => {
-  const words = ['Javascript', 'React.js', 'Node.js', 'Next.js', 'Frontend', 'Backend' ]
+  const words = [
+    "Javascript",
+    "React.js",
+    "Node.js",
+    "Next.js",
+    "Frontend",
+    "Backend",
+  ];
   const Icons = {
     react: () => (
       <svg
@@ -275,7 +282,7 @@ const Header = () => {
           I'm Tamim Ahmed
         </h3>
         <h1 className="text-xl sm:text-3xl mb-4">
-          I am a Web App Developer in <FlipWords words={words}  />
+          I am a Web App Developer in <FlipWords words={words} />
         </h1>
         <p className="dark:text-neutral-400">
           Skilled web developer proficient in frontend and backend development,
@@ -291,7 +298,9 @@ const Header = () => {
           </a>
           <a href="/resume.pdf" download>
             <ShinyButton>
-              <span className="flex items-center gap-2">My Resume <GoDownload /></span>
+              <span className="flex items-center gap-2">
+                My Resume <GoDownload />
+              </span>
             </ShinyButton>
           </a>
         </div>
