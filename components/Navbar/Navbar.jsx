@@ -63,7 +63,7 @@ const Navbar = () => {
           <ModeToggle></ModeToggle>
           <a href="#contact" className="font-Ovo hidden md:block">
             <ShinyButton>
-              <span className="flex items-center gap-2">My Resume <GoDownload /></span>
+              <span className="flex items-center gap-2">Hire me</span>
             </ShinyButton>
           </a>
 

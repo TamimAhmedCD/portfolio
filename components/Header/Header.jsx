@@ -4,8 +4,10 @@ import { GoDownload } from "react-icons/go";
 import { OrbitingCircles } from "../magicui/orbiting-circles";
 import { SparklesText } from "../magicui/sparkles-text";
 import { ShinyButton } from "../magicui/shiny-button";
+import { FlipWords } from "../ui/flip-words";
 
 const Header = () => {
+  const words = ['Javascript', 'React.js', 'Node.js', 'Next.js', 'Frontend', 'Backend' ]
   const Icons = {
     react: () => (
       <svg
@@ -269,11 +271,11 @@ const Header = () => {
             sparklesCount={10}
           ></SparklesText>
         </div>
-        <h3 className="flex items-end gap-2 text-xl md:text-6xl mb-3 font-bold">
+        <h3 className="flex items-end gap-2 text-4xl md:text-6xl mb-3 font-bold">
           I'm Tamim Ahmed
         </h3>
         <h1 className="text-xl sm:text-3xl mb-4">
-          I am a Web App Developer in
+          I am a Web App Developer in <FlipWords words={words}  />
         </h1>
         <p className="dark:text-neutral-400">
           Skilled web developer proficient in frontend and backend development,
