@@ -2,10 +2,11 @@
 import { BackgroundBeams } from "../ui/background-beams";
 import { Button } from "../ui/button";
 import { ModeToggle } from "../ui/MoodToggle/MoodToggle";
-import { GoArrowUpRight } from "react-icons/go";
+import { GoDownload } from "react-icons/go";
 import { CgMenuRightAlt } from "react-icons/cg";
 import { CgClose } from "react-icons/cg";
 import { useRef } from "react";
+import { ShinyButton } from "../magicui/shiny-button";
 
 const Navbar = () => {
   const sideMenuRef = useRef();
@@ -61,9 +62,9 @@ const Navbar = () => {
         <div className="flex gap-3 items-center">
           <ModeToggle></ModeToggle>
           <a href="#contact" className="font-Ovo hidden md:block">
-            <Button variant="outline">
-              Contact <GoArrowUpRight />
-            </Button>
+            <ShinyButton>
+              <span className="flex items-center gap-2">My Resume <GoDownload /></span>
+            </ShinyButton>
           </a>
 
           <button className="block lg:hidden" onClick={openMenu}>

@@ -3,6 +3,7 @@ import { GoArrowUpRight } from "react-icons/go";
 import { GoDownload } from "react-icons/go";
 import { OrbitingCircles } from "../magicui/orbiting-circles";
 import { SparklesText } from "../magicui/sparkles-text";
+import { ShinyButton } from "../magicui/shiny-button";
 
 const Header = () => {
   const Icons = {
@@ -263,20 +264,22 @@ const Header = () => {
       <div className="flex flex-col mt-24">
         <div className="flex mb-4">
           <SparklesText
-            className="text-lg font flex"
+            className="text-lg flex border px-4 py-1 rounded-full"
             text="Hey there! 👋"
-            sparklesCount={2}
+            sparklesCount={10}
           ></SparklesText>
         </div>
-        <h3 className="flex items-end gap-2 text-xl md:text-5xl mb-3 font-Ovo">
+        <h3 className="flex items-end gap-2 text-xl md:text-6xl mb-3 font-bold">
           I'm Tamim Ahmed
         </h3>
-        <h1 className="text-3xl sm:text-6xl lg:text-[50px] font-Ovo mb-4">
+        <h1 className="text-xl sm:text-3xl mb-4">
           I am a Web App Developer in
         </h1>
-        <p>
-          I am a fronted developer from Dhaka Bangladesh, with 10 years of
-          experience in multiple companies like Microsoft, Tesla and Apple
+        <p className="dark:text-neutral-400">
+          Skilled web developer proficient in frontend and backend development,
+          passionate about building dynamic, user-friendly applications and
+          solving complex problems. Eager to grow as a full-stack developer and
+          contribute to innovative projects.
         </p>
         <div className="flex items-center gap-4 mt-4 ">
           <a href="#contact">
@@ -285,9 +288,9 @@ const Header = () => {
             </Button>
           </a>
           <a href="/resume.pdf" download>
-            <Button variant="outline">
-              My Resume <GoDownload />
-            </Button>
+            <ShinyButton>
+              <span className="flex items-center gap-2">My Resume <GoDownload /></span>
+            </ShinyButton>
           </a>
         </div>
       </div>
