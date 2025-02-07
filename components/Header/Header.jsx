@@ -2,6 +2,7 @@ import { Button } from "../ui/button";
 import { GoArrowUpRight } from "react-icons/go";
 import { GoDownload } from "react-icons/go";
 import { OrbitingCircles } from "../magicui/orbiting-circles";
+import { SparklesText } from "../magicui/sparkles-text";
 
 const Header = () => {
   const Icons = {
@@ -260,11 +261,18 @@ const Header = () => {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-between gap-4 px-5 lg:px-8 xl:px-[8%]">
       <div className="flex flex-col mt-24">
-        <h3 className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">
-          Hi! I'm Tamim Ahmed 👋
+        <div className="flex mb-4">
+          <SparklesText
+            className="text-lg font flex"
+            text="Hey there! 👋"
+            sparklesCount={2}
+          ></SparklesText>
+        </div>
+        <h3 className="flex items-end gap-2 text-xl md:text-5xl mb-3 font-Ovo">
+          I'm Tamim Ahmed
         </h3>
-        <h1 className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">
-          frontend web developer based in Bangladesh.
+        <h1 className="text-3xl sm:text-6xl lg:text-[50px] font-Ovo mb-4">
+          I am a Web App Developer in
         </h1>
         <p>
           I am a fronted developer from Dhaka Bangladesh, with 10 years of
