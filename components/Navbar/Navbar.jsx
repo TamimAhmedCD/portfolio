@@ -5,23 +5,48 @@ import { ModeToggle } from "../ui/MoodToggle/MoodToggle";
 import { GoDownload } from "react-icons/go";
 import { CgMenuRightAlt } from "react-icons/cg";
 import { CgClose } from "react-icons/cg";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import { ShinyButton } from "../magicui/shiny-button";
 
 const Navbar = () => {
   const sideMenuRef = useRef();
+  const [isScrolled, setIsScrolled] = useState(false);
+
   const openMenu = () => {
     sideMenuRef.current.style.transform = "translateX(-16rem)";
   };
   const closeMenu = () => {
     sideMenuRef.current.style.transform = "translateX(16rem)";
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <div>
         <BackgroundBeams className="-z-50 h-[80%]"></BackgroundBeams>
       </div>
-      <nav className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+      <nav
+        className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${
+          isScrolled
+            ? "bg-background bg-opacity-50 border-b border-t"
+            : ""
+        }`}
+      >
         {/* Logo */}
         <div>
           <a href="#home" className="text-2xl font-medium">
@@ -29,7 +54,7 @@ const Navbar = () => {
           </a>
         </div>
         {/* Nav list */}
-        <ul className="hidden lg:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm  bg-opacity-50 dark:bg-opacity-[1.5%] backdrop-blur-xl">
+        <ul className={`hidden lg:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScrolled ? "" : "bg-white shadow-sm  bg-opacity-50 dark:bg-opacity-[1.5%] backdrop-blur-xl"}`}>
           <li>
             <a
               href="#home"
