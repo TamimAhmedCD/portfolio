@@ -268,8 +268,9 @@ const Header = () => {
       </svg>
     ),
   };
+
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-between gap-4 px-5 lg:px-8 xl:px-[8%]">
+    <div id="home" className="flex flex-col lg:flex-row items-center justify-between gap-4 px-5 lg:px-8 xl:px-[8%]">
       <div className="flex flex-col mt-24">
         <div className="flex mb-4">
           <SparklesText

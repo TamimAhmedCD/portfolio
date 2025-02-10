@@ -5,6 +5,9 @@
 *{
   font-family: Outfit;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 @layer base {
   :root {
