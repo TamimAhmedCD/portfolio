@@ -42,9 +42,7 @@ const Navbar = () => {
       </div>
       <nav
         className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${
-          isScrolled
-            ? "bg-background bg-opacity-50 border-b border-t"
-            : ""
+          isScrolled ? "bg-background bg-opacity-50 border-b border-t" : ""
         }`}
       >
         {/* Logo */}
@@ -54,7 +52,13 @@ const Navbar = () => {
           </a>
         </div>
         {/* Nav list */}
-        <ul className={`hidden lg:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScrolled ? "" : "bg-white shadow-sm  bg-opacity-50 dark:bg-opacity-[1.5%] backdrop-blur-xl"}`}>
+        <ul
+          className={`hidden lg:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 border ${
+            isScrolled
+              ? "border-none"
+              : "bg-white shadow-sm  bg-opacity-50 dark:bg-opacity-[1.5%] backdrop-blur-xl"
+          }`}
+        >
           <li>
             <a
               href="#home"
