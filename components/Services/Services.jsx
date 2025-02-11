@@ -58,7 +58,7 @@ const Services = () => {
         cy={1}
         cr={1}
         className={cn(
-          "[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)] absolute inset-0"
+          "[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]",
         )}
       />
       
