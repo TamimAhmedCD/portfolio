@@ -7,7 +7,7 @@ import { AnimatedGridPattern } from "../magicui/animated-grid-pattern";
 
 const About = () => {
   return (
-    <div id="about" className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-lg py-10 bg-background md:shadow-xl">
+    <div id="about" className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-lg py-10 bg-background">
       <AnimatedGridPattern
         numSquares={30}
         maxOpacity={0.1}
@@ -80,9 +80,9 @@ const About = () => {
                 </div>
               </div>
               <a href="#contact">
-                <Button>
-                  Contact <GoArrowUpRight />
-                </Button>
+              <Button>
+              Contact <GoArrowUpRight />
+            </Button>
               </a>
             </div>
             <div className="w-full lg:justify-start justify-center items-start flex">
