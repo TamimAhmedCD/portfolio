@@ -1,8 +1,6 @@
 "use client";
-
 import { MagicCard } from "../magicui/magic-card";
 import { useTheme } from "next-themes";
-
 const ServicesCard = ({ icon: Icon, title, description }) => {
   const { theme } = useTheme();
   return (
@@ -21,5 +19,4 @@ const ServicesCard = ({ icon: Icon, title, description }) => {
     </div>
   );
 };
-
 export default ServicesCard;

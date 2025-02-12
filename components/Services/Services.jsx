@@ -1,9 +1,9 @@
 "use client";
 
 import { Code2, Database, Palette, Rocket, File as Mobile, Gauge } from "lucide-react";
-import ServicesCard from "./ServicesCard";
 import { DotPattern } from "../magicui/dot-pattern";
 import { cn } from "@/lib/utils";
+import ServicesCard from "./ServicesCard";
 
 const Services = () => {
   const services = [
