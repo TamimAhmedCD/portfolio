@@ -2,12 +2,8 @@
 const nextConfig = {
   images: {
     domains: ["assets.aceternity.com"],
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "i.ibb.co",
-      },
-    ],
+    domains: ["i.ibb.co"],
+
   },
 };
 
