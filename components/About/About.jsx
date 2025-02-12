@@ -85,7 +85,7 @@ const About = () => {
             </Button>
               </a>
             </div>
-            <div className="w-full lg:justify-start justify-center items-start flex">
+            <div className="w-full lg:justify-end justify-center items-end flex">
               <div className="sm:w-[564px] w-full sm:h-[646px] h-full bg-gray-100 dark:bg-neutral-900 rounded-3xl border border-gray-200 dark:border-neutral-600 p-5 flex justify-center items-center">
                 <Image
                   className="w-full h-full rounded-2xl object-cover"
