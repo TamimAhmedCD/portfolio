@@ -1,0 +1,34 @@
+[
+    {
+      "id": "1",
+      "name": "AssetEase",
+      "techUsed": [
+        "React",
+        "Tailwind CSS",
+        "MongoDB",
+        "JWT",
+        "Tanstack Query",
+        "React Helmet"
+      ],
+      "description": "AssetEase is an asset management system designed for businesses to track company assets used by employees. It supports returnable and non-returnable assets, with features for requesting, approving, and managing assets efficiently.",
+      "image": "assetease-image-url.jpg",
+      "shortDescription": "A modern asset management system for tracking company assets."
+    },
+    {
+      "id": "2",
+      "name": "Chill Gamer",
+      "techUsed": ["React", "API Integration", "Local Storage"],
+      "description": "Chill Gamer is a web-based quiz application with gamification elements, fetching quiz data from an API. It tracks user progress and displays a summary of quiz results, enhancing the learning experience with a sleek UI.",
+      "image": "chillgamer-image-url.jpg",
+      "shortDescription": "A gamified quiz application with API-based questions."
+    },
+    {
+      "id": "3",
+      "name": "Portfolio",
+      "techUsed": ["React", "Tailwind CSS", "Framer Motion"],
+      "description": "A responsive portfolio showcasing my skills, projects, and developer journey with sleek design and smooth animations.",
+      "image": "portfolio-image-url.jpg",
+      "shortDescription": "A sleek portfolio with smooth animations and responsive design."
+    }
+  ]
+  

@@ -28,12 +28,12 @@ export const Timeline = ({ data }) => {
       ref={containerRef}
     >
       <div className="max-w-7xl mx-auto py-20">
-        <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
-          Changelog from my journey
+        <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl font-bold">
+          Showcasing My Project
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
-          I&apos;ve been working on Aceternity for the past 2 years. Here&apos;s
-          a timeline of my journey.
+          Here&apos;s a detailed timeline of my project&apos;s development
+          journey and key milestones.
         </p>
       </div>
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
@@ -51,12 +51,12 @@ export const Timeline = ({ data }) => {
                   {item.title}
                 </h3>
 
-                <div className="flex items-center gap-3 justify-center my-4">
-                  <p>
-                    {item.tech}
-                  </p>
+                <div className="flex items-center gap-3 my-4">
+                  <p className="font-semibold">{item.tech}</p>
                   <div>{item.icon}</div>
                 </div>
+                <p className="dark:text-neutral-400 text-neutral-700">{item.description}</p>
+                <p className="my-4">{item.details}</p>
               </div>
             </div>
 
@@ -64,7 +64,7 @@ export const Timeline = ({ data }) => {
               <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
                 {item.title}
               </h3>
-              {item.content} {" "}
+              {item.content}{" "}
             </div>
           </div>
         ))}
