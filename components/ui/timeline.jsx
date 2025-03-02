@@ -75,10 +75,10 @@ export const Timeline = ({ data }) => {
                 <p className="text-base text-neutral-400 mb-4">{item.desc}</p>
               </div>
               {item.content}
-                <AnimatedShinyText className="md:hidden inline-flex items-center justify-center my-6 cursor-pointer transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
-                  <span className="text-base">{item.view}</span>
-                  <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
-                </AnimatedShinyText>
+              <AnimatedShinyText className="md:hidden inline-flex items-center justify-center my-6 cursor-pointer transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
+                <span className="text-base">{item.view}</span>
+                <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+              </AnimatedShinyText>
             </div>
           </div>
         ))}

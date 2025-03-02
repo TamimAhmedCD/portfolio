@@ -1,6 +1,6 @@
 import React from "react";
 import { Timeline } from "../ui/timeline";
-import projects from "../../public/projects.json"; // Adjust path as needed
+import projects from "../../public/projects.json";
 
 export function Work() {
   const data = projects.projects.map((project) => ({
@@ -20,7 +20,7 @@ export function Work() {
           {project.images.map((img, index) => (
             <img
               key={index}
-              src={img} // Ensure images are inside `/public/projects`
+              src={img}
               alt={project.name}
               width={500}
               height={500}
