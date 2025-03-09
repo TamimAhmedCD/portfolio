@@ -1,8 +1,7 @@
 "use client";
 import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
-import { AnimatedShinyText } from "../magicui/animated-shiny-text";
-import { ArrowRightIcon } from "lucide-react";
+import ProjectDetails from "../ProjectDetails/ProjectDetails";
 
 export const Timeline = ({ data }) => {
   const ref = useRef(null);
@@ -29,7 +28,7 @@ export const Timeline = ({ data }) => {
       className="w-full bg-white dark:bg-neutral-950 font-sans px-5 lg:px-8 xl:px-[8%]"
       ref={containerRef}
     >
-      <div className="max-w-7xl mx-auto py-20">
+      <div className="pt-16 lg:pt-28">
         <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
           Showcase of My Work
         </h2>
@@ -38,10 +37,10 @@ export const Timeline = ({ data }) => {
           growth and dedication to creating meaningful web solutions.
         </p>
       </div>
-      <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
+      <div ref={ref} className="relative pb-20">
         {data.map((item, index) => (
           <div
-            key={index}
+            key={item.id || index}
             className="flex justify-start pt-10 md:pt-40 md:gap-10"
           >
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
@@ -56,11 +55,10 @@ export const Timeline = ({ data }) => {
                   <h3 className="text-base">{item.tech}</h3>
                   <div className="flex gap-2">{item.techIcons}</div>
                 </div>
-                <p className="text-base text-neutral-400">{item.desc}</p>
-                <AnimatedShinyText className="inline-flex items-center my-4 cursor-pointer justify-center transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
-                  <span className="text-lg">{item.view}</span>
-                  <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
-                </AnimatedShinyText>
+                <p className="text-base text-neutral-600 dark:text-neutral-400">
+                  {item.desc}
+                </p>
+                <ProjectDetails project={item} />
               </div>
             </div>
             <div className="relative pl-20 pr-4 md:pl-4 w-full">
@@ -72,13 +70,11 @@ export const Timeline = ({ data }) => {
                   <h3 className="text-base">{item.tech}</h3>
                   <div className="flex gap-2">{item.techIcons}</div>
                 </div>
-                <p className="text-base text-neutral-400 mb-4">{item.desc}</p>
+                <p className="text-base text-neutral-600 dark:text-neutral-400 mb-4">
+                  {item.desc}
+                </p>
               </div>
               {item.content}
-              <AnimatedShinyText className="md:hidden inline-flex items-center justify-center my-6 cursor-pointer transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
-                <span className="text-base">{item.view}</span>
-                <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
-              </AnimatedShinyText>
             </div>
           </div>
         ))}

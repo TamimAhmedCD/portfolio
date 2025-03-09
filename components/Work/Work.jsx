@@ -10,7 +10,6 @@ export function Work() {
       <span key={index} dangerouslySetInnerHTML={{ __html: icon }} />
     )),
     desc: project.desc,
-    view: "✨ View Project",
     content: (
       <div>
         <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
@@ -33,7 +32,7 @@ export function Work() {
   }));
 
   return (
-    <div className="w-full">
+    <div className="">
       <Timeline data={data} />
     </div>
   );
