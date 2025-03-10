@@ -1,59 +1,5 @@
 [
   {
-    "id": "1",
-    "name": "Taskly",
-    "shortDescription": "A simple task management system with drag-and-drop features.",
-    "description": "Taskly is a task management web application that allows users to add, edit, delete, and reorder tasks seamlessly. It features real-time updates and category-based task organization.",
-    "features": [
-      "Google Sign-in authentication",
-      "Drag-and-drop task management",
-      "Real-time updates with MongoDB",
-      "Task categorization (To-Do, In Progress, Done)",
-      "Responsive design for mobile and desktop"
-    ],
-    "techStack": [
-      { "name": "React", "logo": "https://example.com/react-logo.svg" },
-      { "name": "Tailwind CSS", "logo": "https://example.com/tailwind-logo.svg" },
-      { "name": "Express.js", "logo": "https://example.com/express-logo.svg" },
-      { "name": "MongoDB", "logo": "https://example.com/mongodb-logo.svg" },
-      { "name": "Firebase", "logo": "https://example.com/firebase-logo.svg" }
-    ],
-    "livePreview": "https://taskly.example.com",
-    "gitHubClient": "https://github.com/tamimahmed/taskly-client",
-    "gitHubServer": "https://github.com/tamimahmed/taskly-server",
-    "images": [
-      "https://example.com/taskly-image1.png",
-      "https://example.com/taskly-image2.png",
-      "https://example.com/taskly-image3.png",
-      "https://example.com/taskly-image4.png"
-    ]
-  },
-  {
-    "id": "2",
-    "name": "Peddy",
-    "shortDescription": "A pet adoption platform for finding and adopting pets.",
-    "description": "Peddy is an adoption website that fetches pet data from an API, providing users with a platform to find and adopt pets easily.",
-    "features": [
-      "Fetches pet data from an API",
-      "Detailed pet information with images",
-      "Favorites list for saved pets",
-      "Responsive design for all devices",
-      "Search and filter functionality"
-    ],
-    "techStack": [
-      { "name": "Next.js", "logo": "https://example.com/nextjs-logo.svg" },
-      { "name": "Tailwind CSS", "logo": "https://example.com/tailwind-logo.svg" },
-      { "name": "Firebase", "logo": "https://example.com/firebase-logo.svg" }
-    ],
-    "livePreview": "https://peddy.example.com",
-    "gitHubClient": "https://github.com/tamimahmed/peddy-client",
-    "gitHubServer": "https://github.com/tamimahmed/peddy-server",
-    "images": [
-      "https://example.com/peddy-image1.png",
-      "https://example.com/peddy-image2.png"
-    ]
-  },
-  {
     "id": "3",
     "name": "AssetEase",
     "shortDescription": "An asset management system for tracking company assets.",
@@ -66,17 +12,22 @@
       "Responsive UI for desktop and mobile"
     ],
     "techStack": [
-      { "name": "React", "logo": "https://example.com/react-logo.svg" },
-      { "name": "Tailwind CSS", "logo": "https://example.com/tailwind-logo.svg" },
-      { "name": "Node.js", "logo": "https://example.com/nodejs-logo.svg" },
-      { "name": "MongoDB", "logo": "https://example.com/mongodb-logo.svg" }
+      { "name": "React", "logo": "./react.svg" },
+      { "name": "Javascript", "logo": "./javascript.svg" },
+      { "name": "Tailwind CSS", "logo": "./tailwindcss.svg" },
+      { "name": "Node.js", "logo": "./nodejs.svg" },
+      { "name": "MongoDB", "logo": "./MongoDB.svg" },
+      { "name": "Firebase", "logo": "./firebase.svg" },
+      { "name": "JWT", "logo": "./jwt.svg" }
     ],
     "livePreview": "https://assetease.example.com",
     "gitHubClient": "https://github.com/tamimahmed/assetease-client",
     "gitHubServer": "https://github.com/tamimahmed/assetease-server",
     "images": [
-      "https://example.com/assetease-image1.png",
-      "https://example.com/assetease-image2.png"
+      "./asset-ease-1.png",
+      "./asset-ease-2.png",
+      "./asset-ease-2.png",
+      "./asset-ease-2.png"
     ]
   },
   {

@@ -29,7 +29,7 @@ export const Timeline = ({ data }) => {
       ref={containerRef}
     >
       <div className="pt-16 lg:pt-28">
-        <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
+        <h2 className="text-3xl md:text-5xl mb-4 text-black font-bold dark:text-white max-w-4xl">
           Showcase of My Work
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
@@ -58,7 +58,7 @@ export const Timeline = ({ data }) => {
                 <p className="text-base text-neutral-600 dark:text-neutral-400">
                   {item.desc}
                 </p>
-                <ProjectDetails project={item} />
+                {item.projectDetailsButton}
               </div>
             </div>
             <div className="relative pl-20 pr-4 md:pl-4 w-full">
@@ -75,6 +75,9 @@ export const Timeline = ({ data }) => {
                 </p>
               </div>
               {item.content}
+              <div className="md:hidden">
+              {item.projectDetailsButton}
+              </div>
             </div>
           </div>
         ))}
